@@ -1,0 +1,24 @@
+[project]
+name = "dsc-190"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tiff", email = "tsoerianto@ucsd.edu" }
+]
+requires-python = ">=3.10.13"
+dependencies = [
+    "numpy>=2.2.6",
+]
+
+[project.scripts]
+dsc-190 = "dsc_190:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.3",
+]
